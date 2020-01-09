@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.8)
+project(cgiHandler VERSION 1.1 LANGUAGES CXX)
+set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/bin)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -w")
+# All our starting point lists
+
+set(Fastcgipp_DIR "/usr/local/lib/cmake/fastcgi++")
+find_package(Fastcgipp)
+find_package(Threads) 
+include_directories(${FASTCGIPP_INCLUDE_DIR} ${PROJECT_SOURCE_DIR}/include )
+FILE(GLOB  MyCSources ${PROJECT_SOURCE_DIR}/src/*.c*)
+add_executable(${PROJECT_NAME}.fcgi ${MyCSources})
+target_link_libraries(${PROJECT_NAME}.fcgi ${Fastcgipp_LIBRARIES} boost_system boost_thread rt Threads::Threads)

@@ -1,0 +1,1 @@
+/usr/bin/c++   -w   CMakeFiles/cgiHandler.fcgi.dir/src/Ultrasonic_data_parse.cpp.o CMakeFiles/cgiHandler.fcgi.dir/src/cgiHandler.cpp.o CMakeFiles/cgiHandler.fcgi.dir/src/data_parser.cpp.o CMakeFiles/cgiHandler.fcgi.dir/src/serial_func_def.cpp.o  -o ../bin/cgiHandler.fcgi -Wl,-rpath,/usr/local/lib /usr/local/lib/libfastcgipp.so.3.1 -lboost_system -lboost_thread -lrt -lpthread 

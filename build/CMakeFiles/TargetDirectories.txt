@@ -1,0 +1,3 @@
+/home/pi/Desktop/server_program/cgiHandler/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/server_program/cgiHandler/build/CMakeFiles/cgiHandler.fcgi.dir
+/home/pi/Desktop/server_program/cgiHandler/build/CMakeFiles/edit_cache.dir
